@@ -286,6 +286,7 @@ i.fab {
 .footer {
     color: var(--dark);
     font-family: 'Open Sans';
+    font-weight: bold;
 }
 .atasfooter{
     display: block;

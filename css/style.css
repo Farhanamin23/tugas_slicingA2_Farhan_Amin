@@ -451,3 +451,45 @@ object
     font-family: 'Open Sans';
     text-transform: uppercase;
 }
+.search{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: var(--dark);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.submit{
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--light);
+    background: none;
+    border: none;
+    
+}
+.search-txt{
+    width: 0;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    outline: none;
+    transition: 1s;
+    color: var(--light);
+}
+::placeholder{
+    color: var(--light);
+}
+.active{
+}
+.active .submit{
+    color: var(--light);
+    float: right;
+}
+.active .search-txt{
+    width: 100px;
+    padding: 0 20px;
+}

@@ -21,8 +21,8 @@ body {
     transform-style: preserve-3d;
     perspective: 500px;
     margin: auto;
-    }
-    .boxxx .box {
+}
+.boxxx .box {
     position: relative;
     width: 275px;
     height: 275px;
@@ -32,26 +32,29 @@ body {
     overflow: hidden;
     margin-right: 15px;
     margin-top: 45px;
-    }
-    .boxxx:hover .box {
+    flex-wrap: wrap;
+}
+.boxxx:hover .box {
     transform: rotateY(25deg);
-    }
+}
     .boxxx .box:hover ~ .box {
     transform: rotateY(-25deg);
-    }
+}
     .boxxx .box:hover {
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-    }
-    .boxxx .box .imgBx {
+}
+.boxxx .box .imgBx {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    }
-    .boxxx .box .imgBx:before {
+    flex-wrap: wrap;
+
+}
+.boxxx .box .imgBx:before {
     content: '';
     position: absolute;
     top: 0;
@@ -63,19 +66,20 @@ body {
     opacity: 0;
     transition: 0.5s;
     mix-blend-mode: multiply;
-    }
-    .boxxx .box:hover .imgBx:before {
+}
+.boxxx .box:hover .imgBx:before {
     opacity: 1;
-    }
-    .boxxx .box .imgBx img {
+}
+.boxxx .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    }
-    .boxxx .box .content {
+    flex-wrap: wrap;
+}
+.boxxx .box .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -86,8 +90,8 @@ body {
     padding: 20px;
     align-items: flex-end;
     box-sizing: border-box;
-    }
-    .boxxx .box .content h2 {
+}
+.boxxx .box .content h2 {
     color: #fff;
     transition: 0.5s;
     text-transform: uppercase;
@@ -95,20 +99,20 @@ body {
     font-size: 20px;
     transform: translateY(200px);
     transition-delay: 0.3s;
-    }
-    .boxxx .box:hover .content h2 {
+}
+.boxxx .box:hover .content h2 {
     transform: translateY(0px);
-    }
-    .boxxx .box .content p {
+}
+.boxxx .box .content p {
     color: var(--primary);
     transition: 0.5s;
     font-size: 14px;
     transform: translateY(200px);
     transition-delay: 0.4s;
-    }
-    .boxxx .box:hover .content p {
+}
+.boxxx .box:hover .content p {
     transform: translateY(0px);
-    }
+}
 .medan_date{
     margin-left: 24%;
     padding-top: 20px;
@@ -175,32 +179,13 @@ i.fab {
     position: relative;
     right: -400px;
 }
-.facts-overlay {
-    position: absolute;
-    padding: 30px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(0, 0, 0, .65);
-}
-
-.facts-overlay h1 {
-    font-size: 120px;
-    color: transparent;
-    -webkit-text-stroke: 2px var(--primary);
-}
-
 .facts-overlay a:hover {
     color: var(--primary) !important;
 }
 
 
 @media (max-width: 991.98px) {
-    .container-md.navbar .navbar-nav .nav-link  {
+    .container-md.navbar .navbar-nav .nav-link.vector .atasfooter.btn.btn-link.butoon  {
         margin-left: 0;
         padding: 10px 0;
     }
@@ -211,7 +196,7 @@ i.fab {
     }
 }
 @media (min-width: 992px) {
-    .container-md.navbar .nav-item .dropdown-menu {
+    .container-md.navbar .nav-item .vector {
         display: block;
         border: none;
         margin-top: 0;
@@ -274,7 +259,7 @@ i.fab {
         height: 100%;
         object-fit: cover;
     }
-
+    
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
         width: 3rem;
@@ -282,6 +267,22 @@ i.fab {
         border-width: 12px;
     }
 }
+
+@media (max-width: 768px) {
+    .boxxx.box .card .imgBx {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    .boxxx .box .imgBx  {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
 
 .footer {
     color: var(--dark);
@@ -323,49 +324,6 @@ i.fab {
     text-transform: capitalize;
     transition: .3s;
 }
-.card .carousel-item {
-    width: 100%;
-    height: 350px;
-}
-.card .carousel-caption {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 40px;
-text-transform: capitalize;
-color: #0A0A0B;
-}
-h6 {
-    font-size: 18px;
-    font-family: 'Open Sans';
-    color: var(--dark);
-}
-.card .carousel-caption h3 {
-    color: var(--dark);
-    }
-    .card .carousel-caption p {
-    line-height: 30px;
-    }
-    .card .carousel-caption .col-sm-3 {
-    display: flex;
-    align-items: center;
-    }
-    .card .carousel-caption .col-sm-9 {
-    text-align: left;
-}
-.navi a {
-    text-decoration:none;
-}
-a > .ico {
-    background-color: grey;
-    padding: 10px;
-    
-}
-a:hover > .ico {
-    background-color: #666;
-}
-
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
@@ -395,35 +353,6 @@ a:hover > .ico {
 
 .footer .copyright a:hover {
     color: var(--primary);
-}
-.center
-{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    height: 40vh;
-}
-object
-{
-	position: absolute;
-	width: calc(var(--i) * 1.3rem);
-	height: calc(var(--i) * 1.3rem);
-	border: 5px solid var(--primary);
-	border-radius: 50%;
-	transform: translateY(-80%) rotateX(60deg);
-	animation: rot 5s linear infinite;
-	animation-delay: calc(var(--i) * 0.1s);
-}
-@keyframes rot
-{
-	0%,100%
-	{
-		transform: translateY(-80%) rotateX(60deg);
-	}
-	50%
-	{
-		transform: translateY(80%) rotateX(60deg);
-	}
 }
 .footer.copyright {
     padding: 28px 0;
@@ -483,8 +412,7 @@ object
 ::placeholder{
     color: var(--light);
 }
-.active{
-}
+
 .active .submit{
     color: var(--light);
     float: right;

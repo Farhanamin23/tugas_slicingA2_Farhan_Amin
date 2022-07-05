@@ -390,7 +390,7 @@ i2.fab {
     .copyright-menu li {
     display: inline-block;
     color: var(--dark);
-    padding-left: 20px;
+    padding-left: 10px;
     font-family: 'Open Sans';
     text-transform: uppercase;
 }

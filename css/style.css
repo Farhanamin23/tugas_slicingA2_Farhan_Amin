@@ -330,9 +330,9 @@ i2.fab {
     font-family: 'Open Sans';
 }
 .footer .btn.btn-link {
-    display: flex;
     margin-bottom: 4px;
     padding: 0;
+    justify-content: space-between;
     text-align: left;
     color: var(--dark);
     font-weight: bold;
@@ -343,7 +343,8 @@ i2.fab {
     position: relative;
     font-family: 'Open Sans';
     color: var(--dark);
-    margin-right: 10px;
+    margin-right: 14px;
+    justify-content: space-between;
 }
 
 .footer .btn.btn-link:hover {

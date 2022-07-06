@@ -339,6 +339,28 @@ i2.fab {
     text-transform: capitalize;
     transition: .3s;
 }
+.footer .side {
+    display: flex;
+    position: relative;
+    margin-top: -170px;
+    right: -44%;
+    
+}
+.footer .side2 {
+    display: flex;
+    position: relative;
+    margin-top: -170px;
+    right: -44%;
+    bottom: -37px;
+    
+}
+.footer .side3 {
+    display: flex;
+    position: relative;
+    margin-top: -140px;
+    right: -44%;
+    bottom: -37px;   
+}
 .footer .btn.btn-link::before {
     position: relative;
     font-family: 'Open Sans';
@@ -346,7 +368,6 @@ i2.fab {
     margin-right: 14px;
     justify-content: space-between;
 }
-
 .footer .btn.btn-link:hover {
     color: var(--primary);
     letter-spacing: 1px;
